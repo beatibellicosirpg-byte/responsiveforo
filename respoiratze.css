@@ -142,3 +142,23 @@
   /* GRUPOS */
   .grupo0-modoptions { flex-wrap: wrap; gap: 10px; }
 }
+
+@media screen and (max-width: 768px) {
+  #modalShadow {
+    width: 90vw !important;
+    right: 5vw !important;
+    bottom: 70px !important;
+  }
+  #btnPlayerShadow {
+    right: 15px !important;
+    bottom: 15px !important;
+    padding: 10px 14px !important;
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #modalShadow > div {
+    max-height: calc(100vh - 90px) !important;
+  }
+}
