@@ -1,0 +1,144 @@
+/*********************************************
+ * RESPONSIVE OVERRIDE - IRATZE (foroactivo)
+ * Pegar esto AL FINAL de tu CSS actual
+ * (Panel admin > Visualización > Colores/CSS)
+ *********************************************/
+
+/* ======================================================
+   1024px — Notebooks (13", 10") y tablets grandes
+   ====================================================== */
+@media screen and (max-width: 1024px) {
+
+  #wrap {
+    max-width: 98% !important;
+    min-width: unset !important;
+    padding: 0px 10px 15px 10px !important;
+  }
+
+  /* HEADER */
+  .header { height: 500px !important; }
+  .header3 { font-size: clamp(1.6em, 8vw, 4em) !important; }
+
+  /* NAVBAR */
+  .botbar, .realfoot2, .gruposforo { width: 100% !important; }
+
+  /* ÍNDICE DE FOROS */
+  .foro-index { flex-wrap: wrap; height: auto !important; }
+  .foro-left { width: 100px; }
+  .foro-middle {
+    width: calc(100% - 100px) !important;
+    padding-right: 15px !important;
+  }
+  .foro-right {
+    width: 100% !important;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px !important;
+  }
+  .fdesc-img { width: 100% !important; position: relative; }
+  .fdesc-text { width: 100% !important; margin-left: 0 !important; }
+
+  /* TABLÓN */
+  .tablon { height: auto !important; }
+  .tablon2 { flex-wrap: wrap; height: auto !important; }
+  .tablon2-1, .tablon2-2 { width: 100% !important; }
+  .tablon221, .tablon222 { width: 100% !important; }
+  .tablonstaff-2 { width: 100% !important; flex-wrap: wrap; }
+
+  /* ESTADÍSTICAS */
+  .estadisticas { flex-wrap: wrap; height: auto !important; margin-top: 100px; }
+  .es-links { width: 100%; flex-direction: row; justify-content: center; }
+  .es-medio, .es-right { width: 100% !important; border-right: none !important; }
+
+  /* TEMAS / POSTS */
+  .post-up { flex-wrap: wrap; }
+  .post-perfil { width: 100% !important; margin-top: 0 !important; justify-content: center; }
+  .post-post { width: 100% !important; }
+  .perfilt { position: relative !important; top: 0 !important; width: 100%; }
+
+  /* PERFIL */
+  .ps-cper { width: 100% !important; height: auto !important; flex-wrap: wrap; }
+  .ps-avatar { width: 100% !important; }
+  .ps-ccon { width: 100%; flex-direction: row; height: auto !important; }
+  .midperfil { flex-wrap: wrap; }
+  .pscfield.mini-imagen { width: 100% !important; }
+
+  /* AFILIADOS */
+  .afi-env { flex-wrap: wrap; height: auto !important; }
+  .afi02, .afi03 { width: 100% !important; border-right: none !important; }
+
+  /* GRUPOS */
+  .grupo0-decc { flex-wrap: wrap; }
+  .grupo0-count { width: 100%; }
+}
+
+
+/* ======================================================
+   768px — Tablets / notebooks pequeños
+   ====================================================== */
+@media screen and (max-width: 768px) {
+
+  body { font-size: 13px; }
+
+  .header { height: 380px !important; }
+
+  /* GALERÍA / TABLILLAS tipo grid */
+  .gjoin-list2 { justify-content: center; }
+  .grupozero { width: 90% !important; }
+
+  /* NOTIFICACIONES Y MENU LATERAL */
+  .noti-inside, #szSwPanel { width: 260px; }
+
+  /* MIEMBROS DE GRUPO */
+  tr.member-gru0 { width: 90% !important; }
+
+  /* PERFIL: campos en columna */
+  .intro-psc .pscfield { width: 100% !important; }
+
+  /* TABLÓN AVISOS */
+  .tablon-anuncios { flex-wrap: wrap; height: auto !important; }
+  .t-anuncio { border-right: none !important; }
+}
+
+
+/* ======================================================
+   480px — Móviles
+   ====================================================== */
+@media screen and (max-width: 480px) {
+
+  #wrap { padding: 0px 5px 10px 5px !important; }
+
+  .header { height: 280px !important; }
+  .header3 { font-size: clamp(1.4em, 10vw, 2.5em) !important; }
+  .subtituloheader { font-size: 8px !important; letter-spacing: 2px; }
+
+  /* NAVBAR fija arriba: reduce tamaños */
+  .conexion0 { width: 35px !important; height: 35px !important; }
+  .verperfil { left: 55px !important; }
+  a#fa_notifications { font-size: 9px !important; }
+
+  /* TEMAS: ícono lateral y meta se apilan */
+  .tl-icon { width: 15%; }
+  .tl-01 { width: 55%; }
+  .tl-02 { width: 15%; font-size: 11px; }
+  .tl-03 {
+    width: 100% !important;
+    padding-left: 0 !important;
+    margin-top: 10px;
+  }
+  .tema00 { flex-wrap: wrap; height: auto !important; padding: 10px; }
+
+  /* FORO INDEX */
+  .foro-index { padding: 10px; }
+  .foro-name a { font-size: 18px !important; }
+
+  /* ESTADÍSTICAS */
+  .est-new { position: relative; left: 0; flex-wrap: wrap; }
+
+  /* PERFIL */
+  .ps-ava2 { width: 90% !important; left: 5% !important; }
+  .ps-ava2 img { width: 100% !important; height: auto !important; }
+
+  /* GRUPOS */
+  .grupo0-modoptions { flex-wrap: wrap; gap: 10px; }
+}
